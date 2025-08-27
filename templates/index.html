@@ -21,12 +21,22 @@
     <div>
         <h2>¿Qué tipo de bicicleta te gusta?</h2>
         <div>
-            <div>
             <h3>
-                <a href="{% url 'bici_montana' %}">Bicicleta de montaña</a>
-                <img src="" alt="">
+                    <img src="/static/images/inicio/bici_montana.jpg" alt="bicicleta_montana">
+                    <a href="{% url 'bici_montana' %}">Bicicleta de montaña</a>
             </h3>
         </div>
+        <div>
+            <h3>
+                <img src="/static/images/inicio/bici_electrica.jpg" alt="bicicleta_electrica">
+                <a href="{% url 'bici_electrica' %}">Bicicleta eléctrica</a>
+            </h3>
+        </div>
+        <div>
+            <h3>
+                <img src="/static/images/inicio/bici_bmx.jpg" alt="bicicleta_bmx">
+                <a href="{% url 'bici_bmx' %}">Bicicletas BMX</a>
+            </h3>
         </div>
     </div>
 </body>

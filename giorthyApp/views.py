@@ -3,11 +3,6 @@ from django.shortcuts import render
 # Create your views here.
 
 def inicio(request):
-    indexImages = [
-        {
-            
-        }
-    ]
     return render(request,'index.html', {'inicio': inicio})
 
 
@@ -44,21 +39,21 @@ def bici_electrica(request):
             'marca':'Huang Queon',
             'modelo':'future200',
             'tipo':'electrica',
-            'precio': 1500000,
+            'precio': 2940000,
             'imagen':''
         },
         {
-            'marca':'Huang Queon',
-            'modelo':'future200',
+            'marca':'NeoCycle',
+            'modelo':'bornAgain500',
             'tipo':'electrica',
-            'precio': 1500000,
+            'precio': 2100000,
             'imagen':''
         },
         {
-            'marca':'Huang Queon',
-            'modelo':'future200',
+            'marca':'Samsung',
+            'modelo':'Scycle bioSamsung',
             'tipo':'electrica',
-            'precio': 1500000,
+            'precio': 1250000,
             'imagen':''
         }
     ]
@@ -71,21 +66,21 @@ def bici_bmx(request):
             'modelo':'Arcade candy ',
             'tipo':'bmx',
             'precio': 550000,
-            'imagen':''
+            'imagen':'/static/images/bmx/cult.jpg'
         },
         {
             'marca':'Subrosa',
             'modelo':'Sunday forecaster ',
             'tipo':'bmx',
             'precio': 995000,
-            'imagen':''
+            'imagen':'/static/images/bmx/subrosa.jpg'
         },
         {
             'marca':'vans',
             'modelo':'Box rail',
             'tipo':'bmx',
             'precio': 400000,
-            'imagen':''
+            'imagen':'/static/images/bmx/vans.jpg'
         }
     ]
     return render(request, 'bicis.html',{'bicicleta_bmx':bicicleta_bmx})
