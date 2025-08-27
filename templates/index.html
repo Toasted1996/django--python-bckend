@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
 </head>
 <body>
     <header>
@@ -18,26 +19,25 @@
             Creemos que una bicicleta es más que un medio de transporte, por eso queremos ofrecerte lo mejor.
         </p>
     </div>
-    <div>
-        <h2>¿Qué tipo de bicicleta te gusta?</h2>
         <div>
-            <h3>
+            <h2>¿Qué tipo de bicicleta te gusta?</h2>
+            <div class="div-horizontal">
+                <div class="card">
                     <img src="/static/images/inicio/bici_montana.jpg" alt="bicicleta_montana">
-                    <a href="{% url 'bici_montana' %}">Bicicleta de montaña</a>
-            </h3>
+                    <a href="{% url 'bici_montana' %}" class="titulo" style="text-decoration:none;color:#00eaff;font-weight:700;font-size:1.35rem;letter-spacing:2px;text-shadow:0 0 12px #00eaff99;">Bicicleta de montaña</a>
+                    <p class="descripcion" style="color:#e0e0e0;font-size:1.1rem;line-height:1.6;text-shadow:0 0 8px #00eaff44;">Explora senderos y conquista montañas con bicicletas diseñadas para aventura, resistencia y control.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/inicio/bici_electrica.jpg" alt="bicicleta_electrica">
+                    <a href="{% url 'bici_electrica' %}" class="titulo" style="text-decoration:none;color:#00eaff;font-weight:700;font-size:1.35rem;letter-spacing:2px;text-shadow:0 0 12px #00eaff99;">Bicicleta eléctrica</a>
+                    <p class="descripcion" style="color:#e0e0e0;font-size:1.1rem;line-height:1.6;text-shadow:0 0 8px #00eaff44;">Muévete con energía y estilo. Bicicletas eléctricas para trayectos urbanos y ecológicos, con tecnología avanzada.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/inicio/bici_bmx.jpg" alt="bicicleta_bmx">
+                    <a href="{% url 'bici_bmx' %}" class="titulo" style="text-decoration:none;color:#00eaff;font-weight:700;font-size:1.35rem;letter-spacing:2px;text-shadow:0 0 12px #00eaff99;">Bicicletas BMX</a>
+                    <p class="descripcion" style="color:#e0e0e0;font-size:1.1rem;line-height:1.6;text-shadow:0 0 8px #00eaff44;">Ideal para trucos, saltos y competencias. BMX para riders que buscan adrenalina y maniobrabilidad.</p>
+                </div>
+            </div>
         </div>
-        <div>
-            <h3>
-                <img src="/static/images/inicio/bici_electrica.jpg" alt="bicicleta_electrica">
-                <a href="{% url 'bici_electrica' %}">Bicicleta eléctrica</a>
-            </h3>
-        </div>
-        <div>
-            <h3>
-                <img src="/static/images/inicio/bici_bmx.jpg" alt="bicicleta_bmx">
-                <a href="{% url 'bici_bmx' %}">Bicicletas BMX</a>
-            </h3>
-        </div>
-    </div>
 </body>
 </html>

@@ -1,0 +1,104 @@
+/* index.css - Estilo minimalista, responsivo y pseudo futurista para index.html */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+        background: linear-gradient(120deg, #18181b 0%, #23272f 100%);
+        color: #e0e0e0;
+        min-height: 100vh;
+        position: relative;
+}
+header {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    background: rgba(30, 41, 59, 0.85);
+    box-shadow: 0 2px 16px #00eaff33;
+    border-bottom: 2px solid #00eaff44;
+}
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #00eaff;
+    text-shadow: 0 0 16px #00eaff88, 0 0 32px #00eaff22;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: #00eaff;
+    text-align: center;
+    text-shadow: 0 0 8px #00eaff44;
+}
+p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* Horizontal layout for bike types */
+.div-horizontal {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 2.5rem;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+.div-horizontal > div {
+    background: linear-gradient(135deg, #23272f 60%, #00eaff22 100%);
+    border-radius: 22px;
+    box-shadow: 0 4px 32px #00eaff33, 0 0 0 2px #00eaff22;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    min-width: 220px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+    border: 2px solid transparent;
+}
+.div-horizontal > div:hover {
+    transform: translateY(-12px) scale(1.06);
+    box-shadow: 0 12px 48px #00eaff99, 0 0 0 2px #00eaff88;
+    border: 2px solid #00eaff;
+}
+.div-horizontal img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 18px;
+    margin-bottom: 1.2rem;
+    box-shadow: 0 2px 24px #00eaff55;
+    border: 2px solid #00eaff22;
+}
+
+.card {
+    background: linear-gradient(135deg, #23272f 60%, #00eaff22 100%);
+    border-radius: 22px;
+    box-shadow: 0 4px 32px #00eaff33, 0 0 0 2px #00eaff22;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
+    min-width: 220px;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s, border 0.2s;
+    border: 2px solid transparent;
+}
+.card:hover {
+    transform: translateY(-12px) scale(1.06);
+    box-shadow: 0 12px 48px #00eaff99, 0 0 0 2px #00eaff88;
+    border: 2px solid #00eaff;
+}
+
+@media (max-width: 900px) {
+    .div-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .div-horizontal > div {
+        max-width: 95vw;
+    }
+}

@@ -1,0 +1,79 @@
+/* bicis.css - Estilo minimalista, responsivo y pseudo futurista para bicis.html */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    background: linear-gradient(120deg, #18181b 0%, #23272f 100%);
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+header {
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    background: rgba(30, 41, 59, 0.8);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: #00eaff;
+    text-shadow: 0 0 8px #00eaff44;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: #00eaff;
+    text-align: left;
+    margin-left: 2vw;
+}
+
+.catalogo-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.catalogo-horizontal > div {
+    background: rgba(40, 50, 70, 0.7);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px #00eaff22;
+    padding: 1.5rem;
+    min-width: 220px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.catalogo-horizontal > div:hover {
+    transform: translateY(-8px) scale(1.04);
+    box-shadow: 0 8px 32px #00eaff55;
+}
+.catalogo-horizontal img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 12px #00eaff33;
+}
+.catalogo-horizontal span {
+    color: #00eaff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+}
+@media (max-width: 900px) {
+    .catalogo-horizontal {
+        flex-direction: column;
+        align-items: center;
+    }
+    .catalogo-horizontal > div {
+        max-width: 90vw;
+    }
+}

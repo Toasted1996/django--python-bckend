@@ -5,41 +5,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo</title>
+    <link rel="stylesheet" href="{% static 'css/bicis.css' %}">
 </head>
 <body>
     <header>
         <h1>Catalogo</h1>
     </header>
 
-    <div>
-        <h2>Bicicletas de Montaña</h2>
         <div>
-            <span>Trek Marlin 7 - $850.000</span>
-                <img src="/static/images/montana/marlin7.jpg" alt="Bicicleta de montaña Marlin 7">
+            <h2>Bicicletas de Montaña</h2>
+            <div class="catalogo-horizontal">
+                <div class="card">
+                    <img src="/static/images/montana/marlin7.jpg" alt="Bicicleta de montaña Marlin 7">
+                    <span class="titulo">Trek Marlin 7 - $850.000</span>
+                    <p class="descripcion">Ligera, resistente y perfecta para aventuras en montaña. Suspensión avanzada y diseño ergonómico.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/montana/marlin8.jpg" alt="Bicicleta de montaña Marlin 8">
+                    <span class="titulo">Trek Marlin 8 - $1.150.000</span>
+                    <p class="descripcion">Ideal para ciclistas exigentes, con transmisión mejorada y gran rendimiento en terrenos difíciles.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/montana/marlin9.jpg" alt="Bicicleta de montaña Marlin 9">
+                    <span class="titulo">Trek Marlin 9 - $3.490.000</span>
+                    <p class="descripcion">La tope de gama, con componentes premium y máxima comodidad para largas rutas.</p>
+                </div>
+            </div>
         </div>
         <div>
-            <span>Trek Marlin 8 - $1.150.000</span>
-                <img src="/static/images/montana/marlin8.jpg" alt="Bicicleta de montaña Marlin 8">
+            <h2>Bicicletas Eléctricas</h2>
+            <div class="catalogo-horizontal">
+                <div class="card">
+                    <img src="/static/images/electrica/future200.jpg" alt="Bicicleta eléctrica Huang Queon Future200">
+                    <span class="titulo">Huang Queon Future200 - $2.940.000</span>
+                    <p class="descripcion">Motor potente y batería de larga duración. Perfecta para recorridos urbanos y ecológicos.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/electrica/bornagain500.jpg" alt="Bicicleta eléctrica BornAgain 500">
+                    <span class="titulo">BornAgain 500 - $2.100.000</span>
+                    <p class="descripcion">Diseño moderno, fácil de manejar y con sistema de carga rápida. Ideal para la ciudad.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/electrica/scycle.jpg" alt="Bicicleta eléctrica">
+                    <span class="titulo">Scycle bioSamsung - $1.250.000</span>
+                    <p class="descripcion">Eficiencia y tecnología en una bici compacta. Perfecta para desplazamientos diarios.</p>
+                </div>
+            </div>
         </div>
         <div>
-            <span>Trek Marlin 9 - $3.490.000</span>
-                <img src="/static/images/montana/marlin9.jpg" alt="Bicicleta de montaña Marlin 9">
+            <h2>Bicicletas BMX</h2>
+            <div class="catalogo-horizontal">
+                <div class="card">
+                    <img src="/static/images/bmx/cult.jpg" alt="Bicicleta BMX Haro Downtown">
+                    <span class="titulo">Haro Downtown - $450.000</span>
+                    <p class="descripcion">Robusta y ágil, perfecta para trucos y saltos. Diseño clásico BMX.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/bmx/subrosa.jpg" alt="Bicicleta BMX Redline Proline">
+                    <span class="titulo">Redline Proline - $550.000</span>
+                    <p class="descripcion">Excelente para competencias, con marco ligero y gran maniobrabilidad.</p>
+                </div>
+                <div class="card">
+                    <img src="/static/images/bmx/vans.jpg" alt="Bicicleta BMX DK General Lee">
+                    <span class="titulo">DK General Lee - $650.000</span>
+                    <p class="descripcion">Estilo y potencia para riders avanzados. Componentes de alta calidad.</p>
+                </div>
+            </div>
         </div>
-    </div>
-    <div>
-        <h2>Bicicletas Eléctricas</h2>
-        <div>
-            <span>Huang Queon Future200 - $2.940.000<span>
-                <img src="" alt="Bicicleta eléctrica">
-        </div>
-        <div>
-            <span>BornAgain 500 - $2.100.000</span>
-                <img src="" alt="Bicicleta eléctrica">
-        </div>
-        <div>
-            <span>Scycle bioSamsung - $1.250.000</span>
-                <img src="" alt="Bicicleta eléctrica">
-        </div>
-    </div>
 </body>
 </html>
